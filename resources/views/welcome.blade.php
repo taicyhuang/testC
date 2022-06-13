@@ -23,16 +23,17 @@
 <body>
     <div class="container">
         <div class="d-flex flex-row-reverse">
-            <div class="p-2">
-                <div class="logo">
-                    <div class="p-2 welcome">Welcome!</div>
-                    <img class="d-block mx-auto" src="https://cerp.clickforce.asia/image/logo_english 2.png">
+            <div class="p-2  justify-content-center">
+                <div class="logo justify-content-center">
+                    <div class="p-2 welcome ">Welcome!</div>
+                    <img class=" justify-content-center d-block mx-auto"
+                        src="{{ asset('/storage/images/HOLMES_ssp1.png') }}">
                 </div>
-                <div class="p-6">
-                    <div class="login_form_outer">
+                <div class="p-ㄉ justify-content-center">
+
+                    <div class="p-2 login_form_outer">
                         <div class="login_form">
-                            <form method="POST" id="form" action="https://cerp.clickforce.asia/login">
-                                <input type="hidden" name="_token" value="ozMruHzgWG2MP2Rjb0PneYkJXJLilZu6cAeVPD0x">
+                            <form method="POST" id="form" action="">
                                 <div class="mb-3">
                                     <input id="email" type="email" class="form-control form_style  " name="email"
                                         required="required" value="" autocomplete="email" autofocus="" placeholder="帳號">
@@ -48,54 +49,60 @@
                                     <button type="submit" class="form-control button" id="login-btn">登入系統</button>
                                 </div>
                             </form>
+
                         </div>
 
                     </div>
-                </div>
-                <div class="d-flex flex-row-reverse">
-                    <div class="p-2"><img class="img" src="{{ asset('/storage/images/HOLMES_ssp.png')}}" alt=""></div>
-                    <div class="p-2"><img class="img" src="{{ asset('/storage/images/HOLMES-ADS-0114.png')}}" alt="">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2"><img class="img" src="{{ asset('/storage/images/HOLMES_ssp.png')}}" alt="">
+                        </div>
+                        <div class="p-2"><img class="img" src="{{ asset('/storage/images/HOLMES-ADS-0114.png')}}"
+                                alt="">
+                        </div>
+                        <div class="p-2"><img class="img" src="{{ asset('/storage/images/HOLMES-DATA.png')}}" alt="">
+                        </div>
                     </div>
-                    <div class="p-2"><img class="img" src="{{ asset('/storage/images/HOLMES-DATA.png')}}" alt=""></div>
+                    <footer class="copyright">
+                        Copyright © 2019 Powered by CLICKFORCE. All rights reserved.
+
+                        <div class="p-2 justify-content-center">
+                            <div class="p-2  justify-content-center">
+                                Designed by
+                            </div>
+                            <div class="p-2  justify-content-center">
+                                <img src="{{ asset('/storage/images/190503_logo 1.png')}}" alt="">
+                            </div>
+
+
+                        </div>
+                    </footer>
                 </div>
-                {{-- <div class="p-8">
-                    <div class="p-2"> <img src="{{ asset('/storage/images/HOLMES_ssp 2.png')}}" alt=""></div>
-                    <div class="p-2"> <img src="{{ asset('/storage/images/HOLMES_ssp 2.png')}}" alt=""></div>
-                    <div class="p-2"> <img src="{{ asset('/storage/images/HOLMES_ssp 2.png')}}" alt=""></div>
 
-                </div> --}}
             </div>
-
         </div>
-    </div>
 </body>
 
 <style type="text/css">
     body {
         background-image:url("{{  asset('/storage/images/bg.png')}}");
         background-repeat: no-repeat;
-        background-attachment: fixed; //背景圖片位置固定
+        background-attachment: fixed;
         background-position: center;
-        /* background-size: 75%; */
         background-size: cover;
 
     }
 
-    .container {
-        /* background-image:url("{{  asset('/storage/images/cfright.png')}}"); */
-        /* background-repeat: no-repeat; */
+    /* .container {
+
         height: 100%;
-        /* background-attachment: fixed; //背景圖片位置固定 */
-        /* background-position: center; */
-        /* background-size: 75%; */
-        /* background-size: contain; */
+
         padding-top: 50px;
         margin-left: 400px;
         border-top-left-radius: 5%;
         border-top-right-radius: 5%;
         border-bottom-right-radius: 5%;
         border-bottom-left-radius: 5%;
-    }
+    } */
 
     .img {
         width: 95px;
@@ -103,13 +110,8 @@
     }
 
     .login_form_outer {
-
-        /* /* width: 60%; */
-        /* height: 10%; */
-        /* /* margin: 10px; */
-        /* display: block; */
-        /* /* padding-top: 20%; */
-        margin-right: 100px;
+        margin-top: 10px;
+        /* margin-right: 100px; */
     }
 
     .welcome {
@@ -121,6 +123,13 @@
         align-items: center;
         text-align: center;
         color: #4D4D4D;
+    }
+
+    .copyright {
+        font-weight: 400;
+        font-size: 2px;
+        color: #777777;
+        text-align: center;
     }
 </style>
 
