@@ -53,9 +53,10 @@
                     </div>
                 </div>
                 <div class="d-flex flex-row-reverse">
-                    <div class="p-2"><img src="{{ asset('/storage/images/HOLMES_ssp.png')}}" alt=""></div>
-                    <div class="p-2"><img src="{{ asset('/storage/images/HOLMES_ADS-0114.png')}}" alt=""></div>
-                    <div class="p-2"><img src="{{ asset('/storage/images/HOLMES_DATA.png')}}" alt=""></div>
+                    <div class="p-2"><img class="img" src="{{ asset('/storage/images/HOLMES_ssp.png')}}" alt=""></div>
+                    <div class="p-2"><img class="img" src="{{ asset('/storage/images/HOLMES-ADS-0114.png')}}" alt="">
+                    </div>
+                    <div class="p-2"><img class="img" src="{{ asset('/storage/images/HOLMES-DATA.png')}}" alt=""></div>
                 </div>
                 {{-- <div class="p-8">
                     <div class="p-2"> <img src="{{ asset('/storage/images/HOLMES_ssp 2.png')}}" alt=""></div>
@@ -94,9 +95,11 @@
         border-top-right-radius: 5%;
         border-bottom-right-radius: 5%;
         border-bottom-left-radius: 5%;
+    }
 
-
-
+    .img {
+        width: 95px;
+        height: 23px;
     }
 
     .login_form_outer {
